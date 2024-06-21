@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student CRUD Operations using Flask</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fontawesome-all.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mdb.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <h1 class=" text-center text-danger mt-2">Student Information</h1>
+    <div class="row">
+        <div class="card w-50 mx-auto p-3">
+            <div class="card-header bg-light text-center">
+                <h3>Insert New Student Information</h3>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" placeholder="Enter Name"/><br>
+                    
+                    <label for="addr">Address</label><br>
+                    <textarea name="addr" placeholder="Enter Address"></textarea><br>
+
+                    <label for="city">City</label><br>
+                    <input type="text" name="city" placeholder="Enter City"/><br>
+
+                    <label for="pin">Pin</label><br>
+                    <input type="text" name="pin" placeholder="Enter Pin"/><br>
+
+                    <label for="clg">College</label><br>
+                    <textarea name="clg" placeholder="College Name"></textarea><br>
+    
+                    <label for="cgpa">CGPA</label><br>
+                    <input type="text" name="cgpa" placeholder="Enter CGPA"/><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
